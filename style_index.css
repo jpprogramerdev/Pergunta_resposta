@@ -1,0 +1,86 @@
+/*Fonter
+1 - @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap'); --> font-family: 'Prosto One', cursive;
+2 - @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap'); --> font-family: 'Oswald', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+ 
+p.tituloPrincipal{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Prosto One', cursive;
+    animation: animate 1.5s linear infinite;
+    transition: .3s;
+    
+}
+
+p.tituloPergunta{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+}
+
+div.opcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+div.opcoes a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(12, 71, 247);
+    font-size:1.5em;   
+}
+
+div.opcoes a:hover{
+    transition: 1.2s;
+    color: black;
+    animation: animate_link 1.2s linear infinite;
+}
+
+
+body{
+    background: rgba(112,205,255,1); 
+}
+
+
+/*animação*/
+@keyframes animate {
+    0% {
+        text-shadow: 2px 2px 10px rgb(146, 146, 146);
+    }
+
+    50% {
+        text-shadow: 2px 2px 35px rgb(0, 105, 243);
+    }
+
+    100% {
+        text-shadow: 2px 2px 10px rgb(146, 146, 146);
+    }
+}
+
+@keyframes animate_link{
+    0% {
+        color: rgb(0, 105, 243);
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0);
+    }
+    25%{
+        color: rgb(0, 52, 121);
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.363);
+    }
+    50% {
+        color: black;
+        text-shadow: 2px 2px 10px rgb(153, 0, 0);
+    }
+
+    75%{
+        color: rgb(0, 52, 121);
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.363);
+    }
+    100% {
+        color:rgb(0, 105, 243);
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0);
+    }
+}

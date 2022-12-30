@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_games.css">
+    <title>Quest Livro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="pergunta">
+                <h1 class="pergunta" id="pergunta"></h1>
+                <div class="respostas">
+                    <div class="border" id="fundo01"><input type="radio" name="resposta" id="respostas"><label id="resposta01" class="caixa"></label></div>
+                    <div class="border" id="fundo02"><input type="radio" name="resposta" id="respostas"><label id="resposta02" class="caixa"></label></div>
+                    <div class="border" id="fundo03"><input type="radio" name="resposta" id="respostas"><label id="resposta03" class="caixa"></label></div>
+                    <div class="border" id="fundo04"><input type="radio" name="resposta" id="respostas"><label id="resposta04" class="caixa"></label></div>
+                </div>
+            </div>
+            <div class="botao">
+                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Proximo" onclick="proximo()">
+            </div>  
+        </div>
+    </div>
+    
+    <script src="/Projeto_perguntas/Scripts/script_livro.js"></script>
+</body>
+</html>
